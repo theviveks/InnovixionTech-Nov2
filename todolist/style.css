@@ -52,7 +52,7 @@ button{
     border: none;
     outline: none;
     border-radius: 30px;
-    background: rgb(164, 0, 145);
+    background: rgb(243, 0, 138);
     padding: 15px 40px;
     font-size: 16px;
     cursor: pointer;
@@ -114,9 +114,14 @@ ul li span:hover{
 
 }
 @media  (max-width:415px) {
+    .todo h1{
+        font-size: 28px;
+    }
     .todo{
-        width: 80%;
-        margin: 150px auto 20px;
+        width: 100%;
+        margin: 50px auto 20px;
+        padding: 40px 30px 70px;
+
     
     }
     .row{
@@ -125,29 +130,54 @@ ul li span:hover{
         justify-content: space-between;
         border-radius: 26px;
         background: rgb(226, 226, 226);
-        padding-left: 5px;
         margin-bottom: 25px;
-        margin-left: -10px;
+        margin-left: -20px;
+        padding-left: 10px;
+
     }
     input{
         flex: 1;
         border: none;
         outline: none;
         background: transparent;
-        padding: 10px ;
     
     }
     
     button{
         border: none;
         outline: none;
-        border-radius: 30px;
-        background: rgb(164, 0, 145);
-        padding: 15px 20px;
-        font-size: 16px;
+        border-radius: 50px;
+        background: rgb(230, 0, 130);
+        padding: 12px 30px;
+        font-size: 13px;
         cursor: pointer;
         color: white;
+        position: absolute;
+        right: 20px;
+    
+    }
+    ul li{
+        user-select: none;
+        list-style: none;
+        padding: 12px 8px 12px 20px;
+        cursor: pointer;
+        position: relative;
+        font-size: 13px;
+    
         
+    }
+
+    ul li::before{
+        content: '';
+        background-image: url(unchecked.png);
+        position: absolute;
+        background-size: cover;
+        height: 15px;
+        width: 15px;
+        left: -5px;
+        background-position: center;
+        border-radius: 50%;
+        top: 15px;
     
     }
   
