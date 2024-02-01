@@ -113,14 +113,17 @@ ul li span:hover{
     background: rgb(243, 243, 243);
 
 }
-@media  (max-width:415px) {
+@media  (max-width:480px) {
+    html,body{
+        overflow-x: hidden;
+    }
     .todo h1{
         font-size: 28px;
     }
     .todo{
         width: 100%;
         margin: 50px auto 20px;
-        padding: 40px 30px 70px;
+        padding: 30px 30px 30px;
 
     
     }
